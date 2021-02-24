@@ -10,5 +10,6 @@ while (play_again == 'y')
   game.input_check(user_input)
   game.wins(user_input)
   puts 'Would you like to play again? Y/N?'
-  play_again = gets.downcase()
+  play_again = gets.chomp.downcase()
 end
+
