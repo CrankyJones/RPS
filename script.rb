@@ -12,4 +12,3 @@ while (play_again == 'y')
   puts 'Would you like to play again? Y/N?'
   play_again = gets.chomp.downcase()
 end
-
