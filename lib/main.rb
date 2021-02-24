@@ -10,12 +10,15 @@ class RPS
     @rps_plays
   end
 
-  def wins?(user_input, computer)
+  def wins(user_input, computer)
     player_1 = @rps_plays.fetch(user_input)
     player_2 = @rps_plays.fetch(computer)
     if (player_1 == "rock" && player_2 == "scissors") || (player_1 == "paper" && player_2 == "rock") || (player_1 == "scissors" && player_2 == "paper")
       true
-    elsif ()
+    elsif (player_1 == player_2)
+      result = 'DRAW'
+    else
+      false
     end
   end
 
